@@ -40,6 +40,11 @@ func SetupRouter() *gin.Engine {
 		v1.PUT("/persons/:id", app.PersonsUpdate)
 		v1.DELETE("/persons/:id", app.PersonsDelete)
 
+		v1.GET("/rol", app.RolLista)
+		v1.POST("/rol", app.RolCreate)
+		v1.PUT("/rol/:id", app.RolUpdate)
+		v1.DELETE("/rol/:id", app.RolDelete)
+
 	}
 
 	return r
